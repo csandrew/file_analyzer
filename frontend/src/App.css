@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: grey;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.dropzone {
+  border: 3px dashed #667eea;
+  border-radius: 15px;
+  padding: 60px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f8f9ff;
+}
+
+.dropzone:hover, .dropzone.active {
+  border-color: #764ba2;
+  background: #f0f2ff;
+  transform: scale(0.98);
+}
+
+.dropzone-content p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.small {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.file-info {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9ff;
+  border-radius: 10px;
+}
+
+.file-info h3 {
+  margin-bottom: 15px;
+  color: #667eea;
+}
+
+.upload-button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.upload-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.upload-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.results h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+}
+
+.result-section {
+  background: #f8f9ff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.result-section h3 {
+  color: #764ba2;
+  margin-bottom: 15px;
+}
+
+.analysis-details {
+  background: #2d3748;
+  color: #68d391;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+
+.error {
+  background: #fee;
+  border-left: 4px solid #f44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.error h3 {
+  color: #f44;
+  margin-bottom: 10px;
+}
